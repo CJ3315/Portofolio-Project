@@ -13,12 +13,12 @@ function PageTransitions(){
                 for(let j =0; j < sectBtn. length; j++){
                     console.log(i,j);
                     if(i===j){
-                        sections[i].style.display="block";
-                        sectBtn[i].classList.add("btn-active")
+                        sections[j].style.display="block";
+                        sectBtn[j].classList.add("btn-active")
     
                     }else{
-                        sections[i].style.display="none";
-                        sectBtn[i].classList.remove("btn-active")
+                        sections[j].style.display="none";
+                        sectBtn[j].classList.remove("btn-active")
                     }
                 }
     

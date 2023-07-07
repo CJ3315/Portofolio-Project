@@ -48,31 +48,31 @@ section {
 .sec1 {
   display: block;
   transform: translateY(0) scale(1);
-  background-color: rgb(130, 126, 155);
+  background-color: rgb(29, 65, 133);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(130, 126, 155);
+  background-color: rgb(111, 76, 128);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(115, 108, 128);
+  background-color: rgb(60, 154, 170);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(153, 159, 175);
+  background-color: rgb(80, 156, 124);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(153, 159, 175);
+  background-color: rgb(78, 31, 33);
 }
 
 .controlls {

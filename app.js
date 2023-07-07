@@ -7,17 +7,28 @@ const allSections= document.querySelector('.main-content');
 function PageTransitions(){
     //Button click active class
     for(let i =0; i < sectBtn. length; i++){
-        sectBtn[i] .addEventListner('click', function(){
-            let currentBtn = document.querySelectorAll('.active-btn');
-            current[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += 'active-btn'
+        
+        (function(i){
+            sectBtn[i] .addEventListener('click', function(){
+                for(let j =0; j < sectBtn. length; j++){
+                    console.log(i,j);
+                    if(i===j){
+                        sections[i].style.display="block";
+                        sectBtn[i].classList.add("btn-active")
+    
+                    }else{
+                        sections[i].style.display="none";
+                        sectBtn[i].classList.remove("btn-active")
+                    }
+                }
+    
+    
+            })
 
-
-        })
+        })(i)
+      
     }
 }
 //sections Active class
-allSections.addEventListner('click' , (e) =>{
-    console.log(e.target);
-})
+
 PageTransitions();

@@ -47,7 +47,7 @@ section{
 }
 
 .sec1{
-    display: none;
+    display: block;
     transform: translateY(0) scale(1) ;
     background-color: rgb(130, 126, 155);
 }
@@ -78,6 +78,23 @@ section{
 
 //controls
 .controlls{
+    .control{
+    background-color: aliceblue;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+    &:hover{
+        background-color: blanchedalmond;
+        transition: all .4s ease-in-out;
+    
+            color: coral;
+
+    }
+    }
     position: fixed;
     z-index: 10;
     top: 50%;
@@ -90,21 +107,15 @@ section{
     .active-btn{
         background-color: blanchedalmond;
         transition: all .4s ease-in-out;
-        i{
+    
             color: coral;
 
-        }
+    
     }
     padding: 1rem;
     cursor: pointer;
-    background-color: aliceblue;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .7rem 0;
+
+    
     i{
         font-size: 1.2rem;
         color: burlywood;

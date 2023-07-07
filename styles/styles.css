@@ -46,7 +46,7 @@ section {
 }
 
 .sec1 {
-  display: none;
+  display: block;
   transform: translateY(0) scale(1);
   background-color: rgb(130, 126, 155);
 }
@@ -87,6 +87,8 @@ section {
   transform: translateY(-50%);
   padding: 1rem;
   cursor: pointer;
+}
+.controlls .control {
   background-color: aliceblue;
   width: 55px;
   height: 55px;
@@ -96,11 +98,14 @@ section {
   align-items: center;
   margin: 0.7rem 0;
 }
+.controlls .control:hover {
+  background-color: blanchedalmond;
+  transition: all 0.4s ease-in-out;
+  color: coral;
+}
 .controlls .active-btn {
   background-color: blanchedalmond;
   transition: all 0.4s ease-in-out;
-}
-.controlls .active-btn i {
   color: coral;
 }
 .controlls i {

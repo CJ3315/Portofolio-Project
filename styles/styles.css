@@ -13,7 +13,7 @@ body {
   background-color: cadetblue;
   font-family: "Lora", serif;
   font-size: 1.1rem;
-  color: azure;
+  color: navy;
   transition: all 0.4s ease-in-out;
 }
 
@@ -48,31 +48,31 @@ section {
 .sec1 {
   display: block;
   transform: translateY(0) scale(1);
-  background-color: rgb(29, 65, 133);
+  background-color: navy;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(111, 76, 128);
+  background-color: navajowhite;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(60, 154, 170);
+  background-color: navajowhite;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(80, 156, 124);
+  background-color: navajowhite;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(78, 31, 33);
+  background-color: navajowhite;
 }
 
 .controlls {
@@ -99,7 +99,7 @@ section {
   margin: 0.7rem 0;
 }
 .controlls .control:hover {
-  background-color: blanchedalmond;
+  background-color: navajowhite;
   transition: all 0.4s ease-in-out;
   color: coral;
 }
@@ -112,4 +112,51 @@ section {
   font-size: 1.2rem;
   color: burlywood;
   pointer-events: none;
+}
+
+/*header-content*/
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: blanchedalmond;
+  transition: all 0.4s ease-in-out;
+  width: 85%;
+  height: 100%;
+  background-color: navajowhite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 65% 0, 85% 100%, 0% 100%);
+          clip-path: polygon(0 0, 65% 0, 85% 100%, 0% 100%);
+}
+.header-content .image {
+  border-radius: 35px;
+  background-color: navy;
+  margin-left: 17.75rem;
+  transition: all 0.4s ease-in-out;
+}
+.header-content .image img {
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+}
+.header-content .image img:hover {
+  filter: grayscale(0);
+}
+
+/*Independent componets*/
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */

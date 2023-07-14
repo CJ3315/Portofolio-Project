@@ -15,7 +15,7 @@ body{
     background-color: cadetblue;
     font-family: 'Lora', serif;
     font-size: 1.1rem;
-    color: azure;
+    color:navy;
     transition: all .4s ease-in-out;
 }
 a{
@@ -49,31 +49,33 @@ section{
 .sec1{
     display: block;
     transform: translateY(0) scale(1) ;
-    background-color: rgb(29, 65, 133);
+    background-color:navy;
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1) ;
-    background-color: rgb(111, 76, 128);
+    background-color:navajowhite;
+    
+    
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1) ;
-    background-color: rgb(60, 154, 170);
+    background-color:navajowhite;
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1) ;
-    background-color: rgb(80, 156, 124);
+    background-color:navajowhite;
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1) ;
-    background-color: rgb(78, 31, 33);
+    background-color:navajowhite;
 }
 
 //controls
@@ -88,7 +90,7 @@ section{
     align-items: center;
     margin: .7rem 0;
     &:hover{
-        background-color: blanchedalmond;
+        background-color:navajowhite;
         transition: all .4s ease-in-out;
     
             color: coral;
@@ -123,4 +125,54 @@ section{
     }
 
 
+}
+
+
+/*header-content*/
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color:blanchedalmond;
+        transition: all .4s ease-in-out;
+        width: 85%;
+        height: 100%;
+        background-color:navajowhite;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1 ;
+        clip-path: polygon(0 0, 65% 0, 85% 100%, 0% 100%);
+        
+    }
+    .image{
+        border-radius: 35px;
+        background-color:navy;
+        margin-left: 17.75rem;
+        transition: all .4s ease-in-out;
+        img{
+            transition: all .4s ease-in-out;
+            filter: grayscale(100%);
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+/*Independent componets*/
+
+.main-title{
+    text-align: center;
+    h2{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 700;
+        
+    }
 }

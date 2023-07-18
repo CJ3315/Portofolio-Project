@@ -15,7 +15,7 @@ body{
     background-color: cadetblue;
     font-family: 'Lora', serif;
     font-size: 1.1rem;
-    color:navy;
+    color:black;
     transition: all .4s ease-in-out;
 }
 a{
@@ -49,7 +49,7 @@ section{
 .sec1{
     display: block;
     transform: translateY(0) scale(1) ;
-    background-color:navy;
+    background-color:cadetblue;
 }
 
 .sec2{
@@ -151,7 +151,7 @@ section{
     }
     .image{
         border-radius: 35px;
-        background-color:navy;
+        background-color:cadetblue;
         margin-left: 17.75rem;
         transition: all .4s ease-in-out;
         img{
@@ -164,6 +164,75 @@ section{
     }
 }
 
+/*About*/
+.about-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    .right-about{
+        display: grid;
+        grid-template-columns: repeat(2, 10fr);
+        grid-gap: 2rem;
+        .about-item{
+            border: 1px solid color(white);
+            border-radius: 5px;
+            transition: all .4s ease-in-out;
+            box-shadow: 1px 2px 15px rgba($color: #5f9ea0, $alpha: 1.0) ;
+            &:hover{
+                cursor: default;
+                transform: translate(-5px);
+                border: 1px solid (navy);
+                box-shadow: 1px 4px 15px rgba($color: navy $alpha: 1.0);
+
+            }
+            .abt-text{
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                .large-text{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color:cadetblue;
+                }
+                .small-text{
+                    padding-left: 3rem;
+                    position: relative;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    color: black;
+                    letter-spacing: 2px;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 15px;
+                        width: 2rem;
+                        height: 2px;
+                        background-color:cadetblue;
+                    }
+                }
+            }
+        }
+    }
+    .left-about{
+        padding-right: 5rem;
+        p{
+            line-height: 2rem;
+            padding: 1rem;
+
+        }
+        h4{
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+
+
 /*Independent componets*/
 
 .main-title{
@@ -173,6 +242,17 @@ section{
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 700;
-        
+        .bg-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: azure;
+            transition: all .4s ease-in-out;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            font-size: 6.3rem;
+            
+        }
     }
 }

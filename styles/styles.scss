@@ -183,7 +183,7 @@ section{
                 cursor: default;
                 transform: translate(-5px);
                 border: 1px solid (navy);
-                box-shadow: 1px 4px 15px rgba($color: navy $alpha: 1.0);
+                box-shadow: 1px 4px 15px color(black)
 
             }
             .abt-text{
@@ -216,7 +216,7 @@ section{
         }
     }
     .left-about{
-        padding-right: 5rem;
+        padding-right: 1rem;
         p{
             line-height: 2rem;
             padding: 1rem;
@@ -229,6 +229,78 @@ section{
     }
 }
 
+.about-stats{
+    padding-bottom: 4rem;
+    .progress-bars{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        .progress-bar{
+            display: flex;
+            flex-direction: column;
+            .prog-title{
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            .progress-con{
+                display: flex;
+                align-items: center;
+                .prog text{
+                    color: black;
+                }
+                .progress{
+                    width: 100%;
+                    height: .45rem;
+                    background-color: black;
+                    margin-left: 1rem;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        background-color: #5f9ea0;
+                        transition: all .4s ease-in-out;
+                        width: 90%;
+                        
+                    }
+                    
+                    .Photoshop{
+                        width: 60%
+                    }
+
+                    .Premier-Pro{
+                        width: 95%
+                    }
+
+                    .Team-Building{
+                        width: 95%
+                    }
+
+                    .Problem-Solving{
+                        width: 75%
+                    }
+
+                    .Adobe-Audition{
+                        width: 80%
+                    }
+
+                    .Communication{
+                        width: 70%
+                    }
+
+                    .HTML{
+                        width: 50%
+                    }
+
+
+                    
+                    
+                }
+            }
+        }
+    }
+}
 
 
 

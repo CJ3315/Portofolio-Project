@@ -89,7 +89,7 @@ section {
   cursor: pointer;
 }
 .controlls .control {
-  background-color: aliceblue;
+  background-color: black;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -99,12 +99,12 @@ section {
   margin: 0.7rem 0;
 }
 .controlls .control:hover {
-  background-color: navajowhite;
+  background-color: aliceblue;
   transition: all 0.4s ease-in-out;
   color: coral;
 }
 .controlls .active-btn {
-  background-color: blanchedalmond;
+  background-color: rgb(43, 12, 73);
   transition: all 0.4s ease-in-out;
   color: coral;
 }
@@ -283,6 +283,7 @@ section {
 }
 .about-stats::before {
   content: "";
+  position: absolute;
   left: 50%;
   top: 0;
   width: 40%;
@@ -300,6 +301,7 @@ section {
 }
 .stat-title::before {
   content: "";
+  position: absolute;
   left: 50%;
   top: 0;
   width: 40%;
@@ -345,6 +347,109 @@ section {
   font-weight: 500;
 }
 
+.youtube-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.youtubeimages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.youtubeimages .youtubeitem1 {
+  position: relative;
+}
+.youtubeimages .youtubeitem1 img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.youtubeimages .youtubeitem1 .hover-item {
+  width: 100%;
+  height: 100%;
+  background-color: #5f9ea0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.7s ease-in-out;
+}
+.youtubeimages .youtubeitem1 .hover-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.youtubeimages .youtubeitem1 .hover-item .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtubeimages .youtubeitem1 .hover-item .icons i {
+  font-size: 5rem;
+  margin: 0 1rem;
+}
+.youtubeimages .youtubeitem1 .hover-item .icons:hover {
+  background-color: navajowhite;
+  transition: all 0.7s ease-in-out;
+  transform: translate(-5px);
+}
+.youtubeimages .youtubeitem1 .hover-item .icons .icons {
+  background-color: navajowhite;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+}
+
+.youtubeitem1:hover .hover-item {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.photos .photo {
+  position: relative;
+  background-color: #5f9ea0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.photos .photo:hover {
+  box-shadow: 1px 1px 20px rgba(33, 100, 112, 0.5);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.photos .photo:hover img {
+  transform: scale(1.1);
+  box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.8);
+}
+.photos .photo img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.photos .photo .photo-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px black;
+}
+
 /*Independent componets*/
 .main-title {
   text-align: center;
@@ -352,10 +457,73 @@ section {
 .main-title h2 {
   position: relative;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 .main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: azure;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
+}
+
+.main-title2 {
+  text-align: center;
+}
+.main-title2 h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-title2 h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: azure;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
+}
+
+.main-title3 {
+  text-align: center;
+}
+.main-title3 h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-title3 h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: azure;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
+}
+
+.main-title4 {
+  text-align: center;
+}
+.main-title4 h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-title4 h2 .bg-text {
   position: absolute;
   top: 50%;
   left: 50%;

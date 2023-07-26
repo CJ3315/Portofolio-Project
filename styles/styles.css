@@ -104,7 +104,7 @@ section {
   color: coral;
 }
 .controlls .active-btn {
-  background-color: rgb(43, 12, 73);
+  background-color: black;
   transition: all 0.4s ease-in-out;
   color: coral;
 }
@@ -448,6 +448,34 @@ section {
   margin-top: -7px;
   padding: 1.1rem;
   border-top: 8px black;
+}
+
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: #5f9ea0;
+  border: none;
+  background-color: black;
+  width: 100%;
+  color: aliceblue;
+  resize: none;
 }
 
 /*Independent componets*/

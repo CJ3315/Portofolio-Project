@@ -99,7 +99,7 @@ section {
   margin: 0.7rem 0;
 }
 .controlls .control:hover {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   transition: all 0.4s ease-in-out;
   color: coral;
 }
@@ -456,6 +456,20 @@ section {
 }
 .contact-content-con .left-contact {
   flex: 2;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .contact-content-con .right-contact {
   flex: 3;
